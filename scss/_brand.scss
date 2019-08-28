@@ -1,0 +1,23 @@
+// brand colors
+
+// Update Bulma's global variables
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$light-grey: #ccc;
+$primary: $purple;
+$link: $pink;
+
+$body-background-color: $beige-light;
+$tomato: tomato;
+
+// brand typography
+$family-sans-serif: "Nunito", sans-serif;
+
+$lobster: 'Lobster', cursive;
+
+%myh2 {
+    font-size: 1.5em;
+}

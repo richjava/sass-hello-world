@@ -1,0 +1,50 @@
+// .info .info__intro{
+
+// }
+
+.info{
+  &__content {
+    display: flex;
+    background-color: orange;
+  }
+}
+
+  
+  .info__intro {
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    height: 200px;
+    background-color: blue;
+    text-align: right;
+    opacity: 0;
+    /*   repeated code - this would be Sass @mixin */
+    -moz-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+     transform: translateX(20%);
+    /*   repeated code - this would be Sass @extend */
+    -moz-transition: opacity 2s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 2s ease, -ms-transform 1s ease;
+    transition: opacity 2s ease, transform 1s ease;
+  }
+  
+  .info__device {
+    width: 150px;
+    height: 200px;
+    color: #fff;
+    padding: 20px;
+    background-color: green;
+    opacity: 0;
+    /*   repeated code - this would be Sass @mixin */
+    -moz-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+     transform: translateY(20%);
+  /*   repeated code - this would be Sass @extend */
+    -moz-transition: opacity 2s ease, -moz-transform 1s ease;
+    -webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
+    -ms-transition: opacity 2s ease, -ms-transform 1s ease;
+    transition: opacity 2s ease, transform 1s ease;
+  }
